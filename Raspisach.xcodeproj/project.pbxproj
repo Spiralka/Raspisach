@@ -14,15 +14,6 @@
 		7A67E8EB20A3158E003CCF15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A67E8E920A3158E003CCF15 /* LaunchScreen.storyboard */; };
 		7A67E8F320A32EFA003CCF15 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A67E8F220A32EFA003CCF15 /* UIColor+Extensions.swift */; };
 		7A67E8F520A33685003CCF15 /* LessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A67E8F420A33685003CCF15 /* LessonsTableViewCell.swift */; };
-		7A67E8F820A59CF5003CCF15 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A67E8F720A59CF5003CCF15 /* Settings.storyboard */; };
-		7A67E8FA20A59D1D003CCF15 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A67E8F920A59D1D003CCF15 /* SettingsViewController.swift */; };
-		7A67E8FD20A5A3CC003CCF15 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A67E8FC20A5A3CC003CCF15 /* SettingsTableViewCell.swift */; };
-		CF01984C218CC09200ACF6AF /* LessonDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF01984A218CC09200ACF6AF /* LessonDataModel.xcdatamodeld */; };
-		CF01984F218CC15300ACF6AF /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF01984D218CC15300ACF6AF /* Lesson+CoreDataClass.swift */; };
-		CF019850218CC15300ACF6AF /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF01984E218CC15300ACF6AF /* Lesson+CoreDataProperties.swift */; };
-		CF019852218CC1AE00ACF6AF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF019851218CC1AE00ACF6AF /* CoreDataManager.swift */; };
-		CF70B5082178E3F90069BE41 /* AddingClassInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70B5072178E3F90069BE41 /* AddingClassInfo.swift */; };
-		CF70B50B2178EBE70069BE41 /* AddingClassInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70B50A2178EBE70069BE41 /* AddingClassInfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,15 +26,6 @@
 		7A67E8EC20A3158E003CCF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A67E8F220A32EFA003CCF15 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		7A67E8F420A33685003CCF15 /* LessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTableViewCell.swift; sourceTree = "<group>"; };
-		7A67E8F720A59CF5003CCF15 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		7A67E8F920A59D1D003CCF15 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		7A67E8FC20A5A3CC003CCF15 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
-		CF01984B218CC09200ACF6AF /* LessonDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LessonDataModel.xcdatamodel; sourceTree = "<group>"; };
-		CF01984D218CC15300ACF6AF /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
-		CF01984E218CC15300ACF6AF /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		CF019851218CC1AE00ACF6AF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		CF70B5072178E3F90069BE41 /* AddingClassInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingClassInfo.swift; sourceTree = "<group>"; };
-		CF70B50A2178EBE70069BE41 /* AddingClassInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingClassInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +42,6 @@
 		7A67E8D120A3158B003CCF15 = {
 			isa = PBXGroup;
 			children = (
-				CF01984D218CC15300ACF6AF /* Lesson+CoreDataClass.swift */,
-				CF01984E218CC15300ACF6AF /* Lesson+CoreDataProperties.swift */,
 				7A67E8DC20A3158B003CCF15 /* Raspisach */,
 				7A67E8DB20A3158B003CCF15 /* Products */,
 			);
@@ -78,28 +58,14 @@
 		7A67E8DC20A3158B003CCF15 /* Raspisach */ = {
 			isa = PBXGroup;
 			children = (
-				CF019853218CC1BC00ACF6AF /* Managers */,
 				7A67E8DD20A3158B003CCF15 /* AppDelegate.swift */,
 				B5E0367720A750B300A12F32 /* Presenter */,
-				7A67E8F620A59C4C003CCF15 /* Settings */,
 				7A67E8FB20A5A058003CCF15 /* Lessons */,
 				7A67E8E720A3158E003CCF15 /* Assets.xcassets */,
 				7A67E8E920A3158E003CCF15 /* LaunchScreen.storyboard */,
 				7A67E8EC20A3158E003CCF15 /* Info.plist */,
-				CF01984A218CC09200ACF6AF /* LessonDataModel.xcdatamodeld */,
 			);
 			path = Raspisach;
-			sourceTree = "<group>";
-		};
-		7A67E8F620A59C4C003CCF15 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				7A67E8F720A59CF5003CCF15 /* Settings.storyboard */,
-				7A67E8F920A59D1D003CCF15 /* SettingsViewController.swift */,
-				7A67E8FC20A5A3CC003CCF15 /* SettingsTableViewCell.swift */,
-				CF70B5092178E4000069BE41 /* ClassTimeScreen */,
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		7A67E8FB20A5A058003CCF15 /* Lessons */ = {
@@ -118,23 +84,6 @@
 				7A67E8F220A32EFA003CCF15 /* UIColor+Extensions.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		CF019853218CC1BC00ACF6AF /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				CF019851218CC1AE00ACF6AF /* CoreDataManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		CF70B5092178E4000069BE41 /* ClassTimeScreen */ = {
-			isa = PBXGroup;
-			children = (
-				CF70B5072178E3F90069BE41 /* AddingClassInfo.swift */,
-				CF70B50A2178EBE70069BE41 /* AddingClassInfoCell.swift */,
-			);
-			path = ClassTimeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +148,6 @@
 				7A67E8EB20A3158E003CCF15 /* LaunchScreen.storyboard in Resources */,
 				7A67E8E820A3158E003CCF15 /* Assets.xcassets in Resources */,
 				7A67E8E320A3158B003CCF15 /* Main.storyboard in Resources */,
-				7A67E8F820A59CF5003CCF15 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,17 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A67E8E020A3158B003CCF15 /* ViewController.swift in Sources */,
-				CF70B50B2178EBE70069BE41 /* AddingClassInfoCell.swift in Sources */,
-				CF01984C218CC09200ACF6AF /* LessonDataModel.xcdatamodeld in Sources */,
-				CF019850218CC15300ACF6AF /* Lesson+CoreDataProperties.swift in Sources */,
-				CF70B5082178E3F90069BE41 /* AddingClassInfo.swift in Sources */,
 				7A67E8F520A33685003CCF15 /* LessonsTableViewCell.swift in Sources */,
-				CF019852218CC1AE00ACF6AF /* CoreDataManager.swift in Sources */,
-				CF01984F218CC15300ACF6AF /* Lesson+CoreDataClass.swift in Sources */,
 				7A67E8DE20A3158B003CCF15 /* AppDelegate.swift in Sources */,
-				7A67E8FD20A5A3CC003CCF15 /* SettingsTableViewCell.swift in Sources */,
 				7A67E8F320A32EFA003CCF15 /* UIColor+Extensions.swift in Sources */,
-				7A67E8FA20A59D1D003CCF15 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,19 +361,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		CF01984A218CC09200ACF6AF /* LessonDataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CF01984B218CC09200ACF6AF /* LessonDataModel.xcdatamodel */,
-			);
-			currentVersion = CF01984B218CC09200ACF6AF /* LessonDataModel.xcdatamodel */;
-			path = LessonDataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 7A67E8D220A3158B003CCF15 /* Project object */;
 }
