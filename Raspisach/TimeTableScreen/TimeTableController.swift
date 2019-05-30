@@ -215,7 +215,7 @@ extension TimeTableController: UITableViewDelegate, UITableViewDataSource {
                    trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
     {
         let deleteAction = UIContextualAction(style: .destructive, title:  nil, handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
-            if let index = self.lessons.index(of: self.sortedLessons[indexPath.row]) {
+            if let index = self.lessons.firstIndex(of: self.sortedLessons[indexPath.row]) {
                 self.lessons.remove(at: index)
                 if self.lessons.count == 0 {
                     tableView.reloadSections([0], with: .automatic)
@@ -235,7 +235,7 @@ extension TimeTableController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
         let deleteAction = UITableViewRowAction(style: .normal, title: "Удалить") { action, indexPath in
-            if let index = self.lessons.index(of: self.sortedLessons[indexPath.row]) {
+            if let index = self.lessons.firstIndex(of: self.sortedLessons[indexPath.row]) {
                 self.lessons.remove(at: index)
                 if self.lessons.count == 0 {
                     tableView.reloadSections([0], with: .automatic)
