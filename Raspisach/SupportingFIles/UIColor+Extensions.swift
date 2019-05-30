@@ -9,12 +9,17 @@
 import UIKit
 
 extension UIColor {
+    
+    static let mainButtonColor = UIColor(hex: "D23E47")
+    
+
+    
     convenience public init(hex: String) {
         let color: UIColor = {
             var cString:String = hex.trimmingCharacters(in: (NSCharacterSet.whitespacesAndNewlines as NSCharacterSet) as CharacterSet).uppercased()
             
             if (cString.hasPrefix("#")) {
-                cString = cString.substring(from: cString.index(cString.startIndex, offsetBy: 1))
+                cString.remove(at: cString.startIndex)
             }
             
             if ((cString.count) != 6) {
@@ -35,4 +40,6 @@ extension UIColor {
         self.init(cgColor: color.cgColor)
     }
 }
+
+
 

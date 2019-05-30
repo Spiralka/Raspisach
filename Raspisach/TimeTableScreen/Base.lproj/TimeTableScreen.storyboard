@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ddC-lL-JkE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ddC-lL-JkE">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Time Table Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Raspisach" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TimeTableController" customModule="Raspisach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,6 +33,9 @@
                                     <segment title="ВС"/>
                                 </segments>
                                 <color key="tintColor" red="0.82352941176470584" green="0.24313725490196078" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentedChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Y6P-Ne-DHk"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gr-Ui-gK0">
                                 <rect key="frame" x="8" y="686" width="180" height="44"/>
@@ -59,45 +62,47 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="lessonsCell" rowHeight="120" id="Hh3-wb-g1r" customClass="LessonsTableViewCell" customModule="Raspisach" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="lessonsCell" rowHeight="120" id="Hh3-wb-g1r" customClass="TimeTableCell" customModule="Raspisach" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hh3-wb-g1r" id="ce7-Sf-2zy">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="119.66666666666667"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMm-VY-EKc">
-                                                    <rect key="frame" x="84.666666666666671" y="19" width="45.000000000000014" height="21.666666666666671"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMm-VY-EKc">
+                                                    <rect key="frame" x="176.33333333333334" y="19" width="391.66666666666663" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <color key="textColor" red="0.82352941180000006" green="0.24313725489999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAl-xq-HJC">
-                                                    <rect key="frame" x="22.999999999999996" y="19" width="43.666666666666657" height="19.333333333333329"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 m09:00 09:0009:0009:00 09:00 09:0009:0009:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAl-xq-HJC">
+                                                    <rect key="frame" x="23" y="19" width="135.33333333333334" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.82352941180000006" green="0.24313725489999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="10:30" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOe-Rm-LNG">
-                                                    <rect key="frame" x="23" y="94.333333333333329" width="41" height="22.666666666666671"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOe-Rm-LNG">
+                                                    <rect key="frame" x="23" y="91" width="392.33333333333331" height="26"/>
+                                                    <string key="text">10:30 10:30 10:30 10:30 10:30 10:30 10:3010:3010:30
+10:3010:3010:3010:30 10:30</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.82352941180000006" green="0.24313725489999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Аудитория" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdZ-Is-kU4">
-                                                    <rect key="frame" x="82" y="97.666666666666671" width="80.333333333333314" height="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Аудитория Аудитория Аудитория Аудитория Аудитория Аудитория" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdZ-Is-kU4">
+                                                    <rect key="frame" x="433.33333333333326" y="94.333333333333329" width="502" height="19.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                     <color key="textColor" red="0.82352941180000006" green="0.24313725489999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Лекция" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiG-js-KQc">
-                                                    <rect key="frame" x="287" y="50.333333333333336" width="55" height="19.333333333333336"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Лекция Лекция Лекция Лекция Лекция" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiG-js-KQc">
+                                                    <rect key="frame" x="51" y="50.333333333333336" width="291" height="19.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                     <color key="textColor" red="0.82352941180000006" green="0.24313725489999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Преподаватель" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqI-NR-2ZF">
-                                                    <rect key="frame" x="84.666666666666657" y="58.666666666666664" width="116.66666666666666" height="19.333333333333336"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Преподаватель Преподаватель Преподаватель" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqI-NR-2ZF">
+                                                    <rect key="frame" x="176.33333333333334" y="58.666666666666657" width="25.666666666666657" height="344"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                     <color key="textColor" red="0.82352941180000006" green="0.24313725489999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -112,6 +117,7 @@
                                                 <constraint firstItem="tMm-VY-EKc" firstAttribute="leading" secondItem="gAl-xq-HJC" secondAttribute="trailing" constant="18" id="SoO-ce-xTb"/>
                                                 <constraint firstItem="tqI-NR-2ZF" firstAttribute="top" secondItem="tMm-VY-EKc" secondAttribute="bottom" constant="18" id="Soy-N6-nYu"/>
                                                 <constraint firstItem="AiG-js-KQc" firstAttribute="centerY" secondItem="ce7-Sf-2zy" secondAttribute="centerY" id="Xcg-F1-abQ"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tqI-NR-2ZF" secondAttribute="trailing" constant="140" id="atI-5O-Tdp"/>
                                                 <constraint firstAttribute="bottom" secondItem="wdZ-Is-kU4" secondAttribute="bottom" constant="6" id="c0R-je-J3i"/>
                                                 <constraint firstItem="EOe-Rm-LNG" firstAttribute="leading" secondItem="ce7-Sf-2zy" secondAttribute="leadingMargin" constant="8" id="iz2-6V-WWB"/>
                                                 <constraint firstItem="EOe-Rm-LNG" firstAttribute="bottom" secondItem="ce7-Sf-2zy" secondAttribute="bottomMargin" constant="8" id="jKY-Ns-VEH"/>
@@ -122,8 +128,11 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="classRoom_title" destination="wdZ-Is-kU4" id="UkV-HN-FRW"/>
+                                            <outlet property="endTimeLabel" destination="EOe-Rm-LNG" id="NzQ-GU-m9y"/>
                                             <outlet property="lesson_title" destination="tMm-VY-EKc" id="lhm-vG-yQz"/>
+                                            <outlet property="startTimeLabel" destination="gAl-xq-HJC" id="l05-iL-ThB"/>
                                             <outlet property="teacher_name" destination="tqI-NR-2ZF" id="DOd-UO-aec"/>
+                                            <outlet property="typeLabel" destination="AiG-js-KQc" id="Rxe-oc-LPc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -159,17 +168,23 @@
                                 <action selector="tapSettingsButton:" destination="BYZ-38-t0r" id="yDu-YS-88H"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="addIcon" width="44" id="xqA-o8-hGV"/>
+                        <barButtonItem key="rightBarButtonItem" image="addIcon" width="44" id="xqA-o8-hGV">
+                            <connections>
+                                <action selector="tapAddLesson:" destination="BYZ-38-t0r" id="1j9-c9-Zrv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="firstButton" destination="5gr-Ui-gK0" id="8lT-Xt-nq5"/>
+                        <outlet property="addLesson" destination="xqA-o8-hGV" id="SQE-lw-Lpx"/>
+                        <outlet property="firstWeekButton" destination="5gr-Ui-gK0" id="8lT-Xt-nq5"/>
                         <outlet property="lessonsTableView" destination="l6C-xj-BFe" id="Z4p-Xb-6nr"/>
-                        <outlet property="secondButton" destination="wSf-fe-Erd" id="qb6-GW-vsL"/>
+                        <outlet property="secondWeekButton" destination="wSf-fe-Erd" id="qb6-GW-vsL"/>
+                        <segue destination="Fzj-9S-cnM" kind="show" identifier="goToSecond" id="GEV-Br-i0i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927.20000000000005" y="-565.27093596059115"/>
+            <point key="canvasLocation" x="954" y="-565"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i9x-nB-CEv">
@@ -194,6 +209,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Use-FV-nJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="184.80000000000001" y="-564.46776611694156"/>
+        </scene>
+        <!--Set Data Controller-->
+        <scene sceneID="j1p-ie-4hb">
+            <objects>
+                <viewController storyboardIdentifier="SetDataController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fzj-9S-cnM" customClass="SetDataController" customModule="Raspisach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gcE-aq-LD1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aD6-Cg-TEh">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="53" id="Cdz-bG-2TG" customClass="SetDataCell" customModule="Raspisach" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="53"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cdz-bG-2TG" id="IYv-Rj-j2T">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="52.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Lesson" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hcY-HC-Mm0">
+                                                    <rect key="frame" x="15" y="11" width="335" height="31"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hcY-HC-Mm0" firstAttribute="leading" secondItem="IYv-Rj-j2T" secondAttribute="leadingMargin" id="4pu-Xg-u4x"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hcY-HC-Mm0" secondAttribute="trailing" constant="10" id="EN3-05-FqD"/>
+                                                <constraint firstItem="hcY-HC-Mm0" firstAttribute="bottom" secondItem="IYv-Rj-j2T" secondAttribute="bottomMargin" id="J8c-54-6pb"/>
+                                                <constraint firstItem="hcY-HC-Mm0" firstAttribute="top" secondItem="IYv-Rj-j2T" secondAttribute="topMargin" id="J9m-Pj-n3R"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textField" destination="hcY-HC-Mm0" id="BvH-Ug-W6f"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xiq-8j-ckJ" firstAttribute="trailing" secondItem="aD6-Cg-TEh" secondAttribute="trailing" id="FFo-Ly-fgg"/>
+                            <constraint firstItem="aD6-Cg-TEh" firstAttribute="leading" secondItem="xiq-8j-ckJ" secondAttribute="leading" id="UH0-Me-MOd"/>
+                            <constraint firstItem="aD6-Cg-TEh" firstAttribute="top" secondItem="xiq-8j-ckJ" secondAttribute="top" id="VKf-lW-y4m"/>
+                            <constraint firstItem="xiq-8j-ckJ" firstAttribute="bottom" secondItem="aD6-Cg-TEh" secondAttribute="bottom" id="q37-8d-mBX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xiq-8j-ckJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="aD6-Cg-TEh" id="ERy-Ae-JAE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ukp-Lc-enI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712.8" y="-565.27093596059115"/>
         </scene>
     </scenes>
     <resources>

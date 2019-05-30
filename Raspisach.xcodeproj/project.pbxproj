@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		7A67E8DE20A3158B003CCF15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A67E8DD20A3158B003CCF15 /* AppDelegate.swift */; };
-		7A67E8E020A3158B003CCF15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A67E8DF20A3158B003CCF15 /* ViewController.swift */; };
-		7A67E8E320A3158B003CCF15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A67E8E120A3158B003CCF15 /* Main.storyboard */; };
+		7A67E8E020A3158B003CCF15 /* TimeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A67E8DF20A3158B003CCF15 /* TimeTableController.swift */; };
+		7A67E8E320A3158B003CCF15 /* TimeTableScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A67E8E120A3158B003CCF15 /* TimeTableScreen.storyboard */; };
 		7A67E8E820A3158E003CCF15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A67E8E720A3158E003CCF15 /* Assets.xcassets */; };
 		7A67E8EB20A3158E003CCF15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A67E8E920A3158E003CCF15 /* LaunchScreen.storyboard */; };
 		7A67E8F320A32EFA003CCF15 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A67E8F220A32EFA003CCF15 /* UIColor+Extensions.swift */; };
-		7A67E8F520A33685003CCF15 /* LessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A67E8F420A33685003CCF15 /* LessonsTableViewCell.swift */; };
+		7A67E8F520A33685003CCF15 /* TimeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A67E8F420A33685003CCF15 /* TimeTableCell.swift */; };
+		CF0B004F2279DD8400944A1F /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF0B004D2279DD8400944A1F /* DataModel.xcdatamodeld */; };
+		CF353A0B21E90642001160A0 /* SetDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF353A0A21E90642001160A0 /* SetDataController.swift */; };
+		CF353A0D21E9083C001160A0 /* SetDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF353A0C21E9083C001160A0 /* SetDataCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A67E8DA20A3158B003CCF15 /* Raspisach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raspisach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A67E8DD20A3158B003CCF15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7A67E8DF20A3158B003CCF15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7A67E8E220A3158B003CCF15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A67E8DF20A3158B003CCF15 /* TimeTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableController.swift; sourceTree = "<group>"; };
+		7A67E8E220A3158B003CCF15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TimeTableScreen.storyboard; sourceTree = "<group>"; };
 		7A67E8E720A3158E003CCF15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A67E8EA20A3158E003CCF15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A67E8EC20A3158E003CCF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A67E8F220A32EFA003CCF15 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		7A67E8F420A33685003CCF15 /* LessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTableViewCell.swift; sourceTree = "<group>"; };
+		7A67E8F420A33685003CCF15 /* TimeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableCell.swift; sourceTree = "<group>"; };
+		CF0B004E2279DD8400944A1F /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		CF353A0A21E90642001160A0 /* SetDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDataController.swift; sourceTree = "<group>"; };
+		CF353A0C21E9083C001160A0 /* SetDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDataCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,31 +65,34 @@
 			isa = PBXGroup;
 			children = (
 				7A67E8DD20A3158B003CCF15 /* AppDelegate.swift */,
-				B5E0367720A750B300A12F32 /* Presenter */,
-				7A67E8FB20A5A058003CCF15 /* Lessons */,
+				B5E0367720A750B300A12F32 /* SupportingFIles */,
+				7A67E8FB20A5A058003CCF15 /* TimeTableScreen */,
 				7A67E8E720A3158E003CCF15 /* Assets.xcassets */,
 				7A67E8E920A3158E003CCF15 /* LaunchScreen.storyboard */,
-				7A67E8EC20A3158E003CCF15 /* Info.plist */,
 			);
 			path = Raspisach;
 			sourceTree = "<group>";
 		};
-		7A67E8FB20A5A058003CCF15 /* Lessons */ = {
+		7A67E8FB20A5A058003CCF15 /* TimeTableScreen */ = {
 			isa = PBXGroup;
 			children = (
-				7A67E8E120A3158B003CCF15 /* Main.storyboard */,
-				7A67E8DF20A3158B003CCF15 /* ViewController.swift */,
-				7A67E8F420A33685003CCF15 /* LessonsTableViewCell.swift */,
+				7A67E8E120A3158B003CCF15 /* TimeTableScreen.storyboard */,
+				7A67E8DF20A3158B003CCF15 /* TimeTableController.swift */,
+				7A67E8F420A33685003CCF15 /* TimeTableCell.swift */,
+				CF353A0A21E90642001160A0 /* SetDataController.swift */,
+				CF353A0C21E9083C001160A0 /* SetDataCell.swift */,
+				CF0B004D2279DD8400944A1F /* DataModel.xcdatamodeld */,
 			);
-			path = Lessons;
+			path = TimeTableScreen;
 			sourceTree = "<group>";
 		};
-		B5E0367720A750B300A12F32 /* Presenter */ = {
+		B5E0367720A750B300A12F32 /* SupportingFIles */ = {
 			isa = PBXGroup;
 			children = (
+				7A67E8EC20A3158E003CCF15 /* Info.plist */,
 				7A67E8F220A32EFA003CCF15 /* UIColor+Extensions.swift */,
 			);
-			path = Presenter;
+			path = SupportingFIles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +156,7 @@
 			files = (
 				7A67E8EB20A3158E003CCF15 /* LaunchScreen.storyboard in Resources */,
 				7A67E8E820A3158E003CCF15 /* Assets.xcassets in Resources */,
-				7A67E8E320A3158B003CCF15 /* Main.storyboard in Resources */,
+				7A67E8E320A3158B003CCF15 /* TimeTableScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,8 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A67E8E020A3158B003CCF15 /* ViewController.swift in Sources */,
-				7A67E8F520A33685003CCF15 /* LessonsTableViewCell.swift in Sources */,
+				CF353A0D21E9083C001160A0 /* SetDataCell.swift in Sources */,
+				7A67E8E020A3158B003CCF15 /* TimeTableController.swift in Sources */,
+				7A67E8F520A33685003CCF15 /* TimeTableCell.swift in Sources */,
+				CF0B004F2279DD8400944A1F /* DataModel.xcdatamodeld in Sources */,
+				CF353A0B21E90642001160A0 /* SetDataController.swift in Sources */,
 				7A67E8DE20A3158B003CCF15 /* AppDelegate.swift in Sources */,
 				7A67E8F320A32EFA003CCF15 /* UIColor+Extensions.swift in Sources */,
 			);
@@ -168,12 +180,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7A67E8E120A3158B003CCF15 /* Main.storyboard */ = {
+		7A67E8E120A3158B003CCF15 /* TimeTableScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7A67E8E220A3158B003CCF15 /* Base */,
 			);
-			name = Main.storyboard;
+			name = TimeTableScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		7A67E8E920A3158E003CCF15 /* LaunchScreen.storyboard */ = {
@@ -307,7 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47M342TKQP;
-				INFOPLIST_FILE = Raspisach/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Raspisach/SupportingFIles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -326,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47M342TKQP;
-				INFOPLIST_FILE = Raspisach/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Raspisach/SupportingFIles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -361,6 +373,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF0B004D2279DD8400944A1F /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF0B004E2279DD8400944A1F /* DataModel.xcdatamodel */,
+			);
+			currentVersion = CF0B004E2279DD8400944A1F /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7A67E8D220A3158B003CCF15 /* Project object */;
 }
