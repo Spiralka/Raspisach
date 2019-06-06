@@ -209,6 +209,10 @@ extension TimeTableController: UITableViewDelegate, UITableViewDataSource {
         self.navigationController?.pushViewController(setController, animated: true)
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
+    
     
     @available(iOS 11.0, *)
     func tableView(_ tableView: UITableView,

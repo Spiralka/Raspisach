@@ -14,7 +14,6 @@
 		7A67E8EB20A3158E003CCF15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A67E8E920A3158E003CCF15 /* LaunchScreen.storyboard */; };
 		7A67E8F320A32EFA003CCF15 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A67E8F220A32EFA003CCF15 /* UIColor+Extensions.swift */; };
 		7A67E8F520A33685003CCF15 /* TimeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A67E8F420A33685003CCF15 /* TimeTableCell.swift */; };
-		CF0B004F2279DD8400944A1F /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF0B004D2279DD8400944A1F /* DataModel.xcdatamodeld */; };
 		CF353A0B21E90642001160A0 /* SetDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF353A0A21E90642001160A0 /* SetDataController.swift */; };
 		CF353A0D21E9083C001160A0 /* SetDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF353A0C21E9083C001160A0 /* SetDataCell.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +28,6 @@
 		7A67E8EC20A3158E003CCF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A67E8F220A32EFA003CCF15 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		7A67E8F420A33685003CCF15 /* TimeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableCell.swift; sourceTree = "<group>"; };
-		CF0B004E2279DD8400944A1F /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		CF353A0A21E90642001160A0 /* SetDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDataController.swift; sourceTree = "<group>"; };
 		CF353A0C21E9083C001160A0 /* SetDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDataCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +79,6 @@
 				7A67E8F420A33685003CCF15 /* TimeTableCell.swift */,
 				CF353A0A21E90642001160A0 /* SetDataController.swift */,
 				CF353A0C21E9083C001160A0 /* SetDataCell.swift */,
-				CF0B004D2279DD8400944A1F /* DataModel.xcdatamodeld */,
 			);
 			path = TimeTableScreen;
 			sourceTree = "<group>";
@@ -170,7 +167,6 @@
 				CF353A0D21E9083C001160A0 /* SetDataCell.swift in Sources */,
 				7A67E8E020A3158B003CCF15 /* TimeTableController.swift in Sources */,
 				7A67E8F520A33685003CCF15 /* TimeTableCell.swift in Sources */,
-				CF0B004F2279DD8400944A1F /* DataModel.xcdatamodeld in Sources */,
 				CF353A0B21E90642001160A0 /* SetDataController.swift in Sources */,
 				7A67E8DE20A3158B003CCF15 /* AppDelegate.swift in Sources */,
 				7A67E8F320A32EFA003CCF15 /* UIColor+Extensions.swift in Sources */,
@@ -373,19 +369,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		CF0B004D2279DD8400944A1F /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CF0B004E2279DD8400944A1F /* DataModel.xcdatamodel */,
-			);
-			currentVersion = CF0B004E2279DD8400944A1F /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 7A67E8D220A3158B003CCF15 /* Project object */;
 }
